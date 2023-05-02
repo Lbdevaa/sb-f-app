@@ -1,4 +1,5 @@
 {
+  "homepage": "https://lbdevaa.github.io/sb-f-app",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -11,6 +12,8 @@
     "node": ">=10"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
@@ -84,6 +87,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
     "react-scripts": "^5.0.1"
   }
 }
