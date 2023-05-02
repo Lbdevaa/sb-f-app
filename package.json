@@ -21,6 +21,11 @@
     "storybook": "storybook dev",
     "build-storybook": "storybook build"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
   "peerDependencies": {
     "react": ">=16"
   },
@@ -74,5 +79,8 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "react-scripts": "^5.0.1"
   }
 }
