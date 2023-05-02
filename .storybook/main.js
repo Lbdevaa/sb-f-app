@@ -6,7 +6,17 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-mdx-gfm',
     '@storybook/addon-interactions', //
-    '@storybook/preset-create-react-app', //
+    '@storybook/preset-create-react-app',
+    '@storybook/addon-essentials',
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        sass: {
+          // Require your Sass preprocessor here
+          implementation: require('sass'),
+        },
+      },
+    },
   ],
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
   typescript: {

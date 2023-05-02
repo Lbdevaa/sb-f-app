@@ -18,7 +18,7 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "storybook": "storybook dev",
+    "storybook": "storybook dev -p 1111",
     "build-storybook": "storybook build"
   },
   "eslintConfig": {
@@ -63,6 +63,7 @@
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^7.0.7",
     "@storybook/addon-mdx-gfm": "^7.0.7",
+    "@storybook/addon-styling": "^1.0.5",
     "@storybook/addons": "^7.0.7",
     "@storybook/cli": "^7.0.7",
     "@storybook/react": "^7.0.7",
@@ -74,6 +75,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "sass": "^1.62.1",
     "size-limit": "^8.2.4",
     "storybook": "^7.0.7",
     "tsdx": "^0.14.1",
@@ -81,6 +83,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "react-scripts": "^5.0.1"
   }
 }
