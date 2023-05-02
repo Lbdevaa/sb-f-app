@@ -1,5 +1,5 @@
 {
-  "homepage": "https://lbdevaa.github.io/sb-f-app",
+  "homepage": "https://lbdevaa.github.io/sb-f-app/",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -12,8 +12,6 @@
     "node": ">=10"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
@@ -21,8 +19,9 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "storybook": "storybook dev -p 1111",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": [
