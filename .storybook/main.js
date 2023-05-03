@@ -7,7 +7,6 @@ module.exports = {
     '@storybook/addon-mdx-gfm',
     '@storybook/addon-interactions', //
     '@storybook/preset-create-react-app',
-    '@storybook/addon-essentials',
     {
       name: '@storybook/addon-styling',
       options: {
@@ -30,4 +29,12 @@ module.exports = {
   docs: {
     autodocs: true,
   },
+  // staticDirs: ['../public'],
+  // core: {
+  //   builder: '@storybook/builder-webpack5',
+  // },
+  // features: {
+  //   interactionsDebugger: true,
+  // },
+  // framework: '@storybook/react',
 };

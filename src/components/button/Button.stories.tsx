@@ -1,5 +1,6 @@
 import { Button } from './index';
 import { Meta, StoryFn } from '@storybook/react';
+import { IButtonProps } from './types';
 
 export default {
   title: 'UI/Button',
@@ -34,9 +35,16 @@ export default {
   //     description: 'Spinner',
   //   },
   // },
-} as Meta;
+  parameters: {
+    controls: {
+      exclude: [],
+    },
+  },
+} as Meta<ButtonStoryProps>;
 
-const Template: StoryFn = args => <Button {...args} />;
+type ButtonStoryProps = Pick<IButtonProps, 'variant'>;
+
+const Template: StoryFn<ButtonStoryProps> = args => <Button {...args} />;
 
 // export const Default = () => <Button>Click me</Button>;
 export const Default = Template.bind({});
